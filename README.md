@@ -8,6 +8,6 @@ YouTube puts trackers into their share links. This 3 line Python code lets you g
 3. The link is now sanitised, enjoy your cleaned link.
 
 
-####How it works####
+#### How it works ####
 
 * It splits the link by the "?" and gives back the front part of the link, which is the actual video link
