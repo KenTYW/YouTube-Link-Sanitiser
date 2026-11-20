@@ -1,0 +1,30 @@
+{
+  "categories": [
+    {
+      "id": "687d1962-68c0-4338-aeee-66f2539cf577",
+      "name": "My Shortcuts",
+      "shortcuts": [
+        {
+          "codeOnPrepare": "/*{sanitise_input}*/\n\n// 1. Grab text from the Share Sheet variable\nconst link \u003d getVariable(\"sanitise_input\");\n\n// 2. Strip everything from \u0027?\u0027 onward (removes tracking parameters)\nconst linkSani \u003d link.split(\u0027?\u0027)[0].trim();\n\n\n// Quick visual confirmation that the script fired\n//showToast(\u0027Cleaned: \u0027 + linkSani);\n\n// 3. Output directly via Android\u0027s native Share Sheet\nshareText(linkSani);",
+          "description": "Social Media Share Link Tracker Sanitiser",
+          "excludeFromFileSharing": true,
+          "executionType": "scripting",
+          "iconName": "flat_color_lightbulb_3",
+          "id": "2dbc9b9e-76af-44a2-b78e-a813d158250a",
+          "name": "Link Sanitiser"
+        }
+      ]
+    }
+  ],
+  "compatibilityVersion": 90,
+  "createdAt": "2026-11-20T04:14:54.370204Z",
+  "originDeviceId": "T89VZM0546",
+  "variables": [
+    {
+      "id": "e6f2aae4-647d-4e8b-ab4c-6800937a67f1",
+      "isShareText": true,
+      "key": "sanitise_input"
+    }
+  ],
+  "version": 92
+}
