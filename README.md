@@ -8,9 +8,9 @@ YouTube and Twitter/X/Xhitter puts trackers into their share links. This 3 line 
 
 3. The link is now sanitised, enjoy your cleaned link.
 
-## For the JSON (.json) file
-# To Install # 
-1. Get the HTTP Shortcuts app on Android via this link: https://f-droid.org/packages/ch.rmy.android.http_shortcuts #
+## For the JSON (.json) file ##
+### To Install ###
+1. Get the HTTP Shortcuts app on Android via this link: https://f-droid.org/packages/ch.rmy.android.http_shortcuts 
 
 2a. Click this link to auto import: https://http-shortcuts.rmy.ch/import?url=https://github.com/KenTYW/YouTube-Link-Sanitiser/raw/refs/heads/main/shortcut.zip
 
@@ -18,7 +18,7 @@ YouTube and Twitter/X/Xhitter puts trackers into their share links. This 3 line 
 
 3. Success, you have now imported the shortcut! Congratulations!
 
-# To Use #
+### To Use ###
 1. On any social media, tap the SHARE button
 
 2. Find your installed shortcut in the share menu (might be hard to find the first time as Android has to learn you want to use this app)
