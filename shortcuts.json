@@ -5,7 +5,7 @@
       "name": "My Shortcuts",
       "shortcuts": [
         {
-          "codeOnPrepare": "/*{sanitise_input}*/\n\n// 1. Grab text from the Share Sheet variable\nconst link \u003d getVariable(\"sanitise_input\");\n\n// 2. Strip everything from \u0027?\u0027 onward (removes tracking parameters)\nconst linkSani \u003d link.split(\u0027?\u0027)[0].trim();\n\n\n// Quick visual confirmation that the script fired\n//showToast(\u0027Cleaned: \u0027 + linkSani);\n\n// 3. Output directly via Android\u0027s native Share Sheet\nshareText(linkSani);",
+          "codeOnPrepare": "/*{input_text}*/\n\nlet linkSani \u003d \u0027\u0027;\n\n// 1. Grab text from the Share Sheet variable\nconst link \u003d getVariable(/*[variable]*/\"e6f2aae4-647d-4e8b-ab4c-6800937a67f1\"/*[/variable]*/);\n\n// 2. Strip everything from \u0027?\u0027 or \u0027\u0026\u0027 onward (removes tracking parameters)\n\nif (link.includes(\"youtube\") \u0026\u0026 link.includes(\"\u0026\")){\nlinkSani \u003d link.split(\u0027\u0026\u0027)[0].trim();\n}\nelse{\nlinkSani \u003d link.split(\u0027?\u0027)[0].trim();\n}\n\n\n// Quick visual confirmation that the script fired\nshowToast(\u0027Cleaned: \u0027 + linkSani);\n\n// 3. Output directly via Android\u0027s native Share Sheet\nshareText(linkSani);",
           "description": "Social Media Share Link Tracker Sanitiser",
           "excludeFromFileSharing": true,
           "executionType": "scripting",
@@ -17,13 +17,13 @@
     }
   ],
   "compatibilityVersion": 90,
-  "createdAt": "2026-11-20T04:14:54.370204Z",
+  "createdAt": "2026-11-22T02:39:47.271780Z",
   "originDeviceId": "T89VZM0546",
   "variables": [
     {
       "id": "e6f2aae4-647d-4e8b-ab4c-6800937a67f1",
       "isShareText": true,
-      "key": "sanitise_input"
+      "key": "input_text"
     }
   ],
   "version": 92
